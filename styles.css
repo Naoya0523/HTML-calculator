@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    font-size: 50px;
+    font-size: auto;
     color: aliceblue;
     width: 340px;
     height: 80px;
@@ -44,7 +44,7 @@ body {
 
 .num {
     font-size: large;
-    color: aqua;
+    color: rgb(143, 191, 255);
     width: 80px;
     height: 80px;
     display: flex;
