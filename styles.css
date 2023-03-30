@@ -52,7 +52,7 @@ body {
     align-items: center;
 }
 
-.init {
+.symbol {
     font-size: large;
     color: rgb(70, 70, 70);
     width: 80px;
@@ -63,7 +63,7 @@ body {
     align-items: center;
 }
 
-.init0 {
+.symbol1 {
     font-size: large;
     color: rgb(65, 65, 65);
     width: 80px;
