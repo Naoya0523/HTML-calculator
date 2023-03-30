@@ -1,6 +1,48 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
 h1 {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 100;
-    background-color: black;
-    color: aliceblue;
+    font-style: italic;
+    color: rgb(209, 209, 209);
+}
+
+.container {
+    white-space: nowrap;
+    display: flex;
+}
+
+.item {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.num {
+    font-size: large;
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.init {
+    font-size: large;
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
