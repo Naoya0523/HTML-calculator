@@ -2,11 +2,26 @@ body {
     background-color: rgb(41, 41, 41);
 }
 
-h1 {
-    font-size: 25px;
-    font-weight: 100;
-    font-style: italic;
-    color: rgb(209, 209, 209);
+.answer_erea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 80px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.ans_string {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    font-size: 50px;
+    color: aliceblue;
+    width: 340px;
+    height: 80px;
+    vertical-align: middle;
 }
 
 .container {
@@ -17,8 +32,8 @@ h1 {
 .item {
     display: inline-block;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
     background-color: rgba(1, 1, 1, 0);
@@ -30,8 +45,8 @@ h1 {
 .num {
     font-size: large;
     color: aqua;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +54,35 @@ h1 {
 
 .init {
     font-size: large;
-    color: aqua;
-    width: 100px;
-    height: 100px;
+    color: rgb(70, 70, 70);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 217, 92);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.init0 {
+    font-size: large;
+    color: rgb(65, 65, 65);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero {
+    display: inline-block;
+    cursor: pointer;
+    width: 167px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 1);
 }
