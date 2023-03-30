@@ -1,5 +1,12 @@
 let answer = "";
 
+//number 0~9
+let btn0 = document.getElementById('0');
+btn0.onclick = function() {
+    answer += '0';
+    document.getElementById('ans').innerHTML = answer;
+};
+
 let btn1 = document.getElementById('1');
 btn1.onclick = function(){
     answer += '1';
@@ -11,6 +18,7 @@ btn2.onclick = function() {
     answer += '2';
     document.getElementById('ans').innerHTML = answer;
 };
+
 
 let btn_equal = document.getElementById('equal');
 btn_equal.onclick = function() {
