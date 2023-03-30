@@ -1,4 +1,4 @@
-let answer = ""
+let answer = "";
 
 let btn1 = document.getElementById('1');
 btn1.onclick = function(){
