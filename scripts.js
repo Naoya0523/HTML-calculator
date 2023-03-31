@@ -65,9 +65,9 @@ btn9.onclick = function() {
 //symbol
 let btn_equal = document.getElementById('equal');
 btn_equal.onclick = function() {
-    ans = answer.replace('x', '*').replace('%', '*0.01')
-    answer = eval(ans);
-    document.getElementById('ans').innerHTML = answer.toString();
+    ans = answer.replace('x', '*').replace('%', '*0.01').replace('÷', '/');
+    answer = eval(ans).toString();
+    document.getElementById('ans').innerHTML = answer;
 };
 
 let btn_C = document.getElementById('C');
@@ -96,7 +96,7 @@ btn_plus.onclick = function() {
 
 let btn_div = document.getElementById('division');
 btn_div.onclick = function() {
-    answer += '/';
+    answer += '÷';
     document.getElementById('ans').innerHTML = answer;
 };
 
