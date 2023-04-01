@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(61, 61, 61);
 }
 
 .answer_erea {
@@ -75,14 +75,14 @@ body {
     color: rgb(70, 70, 70);
     width: 80px;
     height: 80px;
-    background-color: rgb(255, 217, 92);
+    background-color: rgba(255, 217, 92, 1);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .symbol:hover {
-    background-color: rgba(255, 243, 140, 0.6);
+    background-color: rgba(255, 245, 112, 0.6);
 }
 
 .symbol1 {
