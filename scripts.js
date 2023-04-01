@@ -1,6 +1,6 @@
 let answer = "";
 
-//number 0~9
+//number 0~9//////////////////////////////////////////////////////
 let btn0 = document.getElementById('0');
 btn0.onclick = function() {
     answer += '0';
@@ -60,9 +60,9 @@ btn9.onclick = function() {
     answer += '9';
     document.getElementById('ans').innerHTML = answer
 };
+///////////////////////////////////////////////////////////////////////////
 
-
-//symbol
+//symbol///////////////////////////////////////////////////////////////////
 let btn_equal = document.getElementById('equal');
 btn_equal.onclick = function() {
     ans = answer.replace('x', '*').replace('%', '*0.01').replace('÷', '/');
@@ -117,3 +117,4 @@ btn_dot.onclick = function() {
     answer += '.';
     document.getElementById('ans').innerHTML = answer;
 };
+///////////////////////////////////////////////////////////////////////////
