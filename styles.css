@@ -44,12 +44,30 @@ body {
 
 .num {
     font-size: large;
-    color: rgb(143, 191, 255);
+    color: rgb(145, 190, 255);
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.num:hover {
+    background-color: rgba(30, 30, 30, 0.6);
+}
+
+.num0 {
+    font-size: large;
+    color: rgb(145, 190, 255);
+    width: 167px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num0:hover {
+    background-color: rgba(30, 30, 30, 0.6);
 }
 
 .symbol {
@@ -63,6 +81,10 @@ body {
     align-items: center;
 }
 
+.symbol:hover {
+    background-color: rgba(255, 243, 140, 0.6);
+}
+
 .symbol1 {
     font-size: large;
     color: rgb(65, 65, 65);
@@ -72,6 +94,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.symbol1:hover {
+    background-color: rgba(200, 200, 200, 0.6);
 }
 
 .zero {
