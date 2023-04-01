@@ -1,4 +1,5 @@
 let answer = "";
+let sin_flg = true
 
 //number 0~9//////////////////////////////////////////////////////
 let btn0 = document.getElementById('0');
@@ -72,8 +73,15 @@ btn_equal.onclick = function() {
 
 let btn_C = document.getElementById('C');
 btn_C.onclick = function() {
-    answer = ""
-    document.getElementById('ans').innerHTML = answer
+    answer = "";
+    document.getElementById('ans').innerHTML = answer;
+    //sin
+    sin_flg = false;
+    document.getElementById('sin_str').innerHTML = 'sin';
+    //cos
+
+    //tan
+
 };
 
 let btn_multiple = document.getElementById('multiple');
@@ -118,3 +126,20 @@ btn_dot.onclick = function() {
     document.getElementById('ans').innerHTML = answer;
 };
 ///////////////////////////////////////////////////////////////////////////
+
+//sin, cons, tan //////////////////////////////////////////////////////////
+
+let btn_sin = document.getElementById('sin');
+btn_sin.onclick = function() {
+    if (sin_flg) {
+        answer += 'sin(';
+        document.getElementById('ans').innerHTML = answer;
+        sin_flg = false;
+        document.getElementById('sin_str').innerHTML = ')';
+    } else {
+        answer += ')';
+        document.getElementById('ans').innerHTML = answer;
+        sin_flg = true;
+        document.getElementById('sin_str').innerHTML = 'sin';
+    }
+};
