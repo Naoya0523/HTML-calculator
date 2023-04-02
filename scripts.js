@@ -128,6 +128,20 @@ btn_dot.onclick = function() {
 ///////////////////////////////////////////////////////////////////////////
 
 //sin, cons, tan //////////////////////////////////////////////////////////
+function trifonometric_fnc(type_of_fnc, fnc, type_of_str) {
+    if (type_of_fnc) {
+        answer += type_of_str;
+        document.getElementById('ans').innerHTML = answer;
+        document.getElementById(fnc).innerHTML = ')';
+        type_of_fnc = false;
+    } else {
+        answer += ')';
+        document.getElementById('ans').innerHTML = answer;
+        document.getElementById(fnc).innerHTML = type_of_str + ')';
+        type_of_fnc = true;
+    }
+}
+
 
 let btn_sin = document.getElementById('sin');
 btn_sin.onclick = function() {
