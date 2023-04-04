@@ -1,5 +1,8 @@
 let answer = "";
-let sin_flg = true
+// boolean
+let sin_flg = true;
+let cos_flg = true;
+let tan_flg = true;
 
 //number 0~9//////////////////////////////////////////////////////
 let btn0 = document.getElementById('0');
@@ -128,32 +131,34 @@ btn_dot.onclick = function() {
 ///////////////////////////////////////////////////////////////////////
 
 //sin, cons, tan //////////////////////////////////////////////////////////
-function trifonometric_fnc(type_of_fnc, fnc, type_of_str) {
-    if (type_of_fnc) {
-        answer += type_of_str;
+function trifonometric_fnc(fnc_boolean, trifonometric, type_of_str) {
+    if (fnc_boolean) {
+        answer += trifonometric + '(';
         document.getElementById('ans').innerHTML = answer;
-        document.getElementById(fnc).innerHTML = ')';
-        type_of_fnc = false;
+        document.getElementById(type_of_str).innerHTML = ')';
+        fnc_boolean = false;
+        return fnc_boolean;
     } else {
         answer += ')';
         document.getElementById('ans').innerHTML = answer;
-        document.getElementById(fnc).innerHTML = type_of_str + ')';
-        type_of_fnc = true;
+        document.getElementById(type_of_str).innerHTML = trifonometric;
+        fnc_boolean = true;
+        return fnc_boolean;
     }
 }
 
 
 let btn_sin = document.getElementById('sin');
 btn_sin.onclick = function() {
-    if (sin_flg) {
-        answer += 'sin(';
-        document.getElementById('ans').innerHTML = answer;
-        sin_flg = false;
-        document.getElementById('sin_str').innerHTML = ')';
-    } else {
-        answer += ')';
-        document.getElementById('ans').innerHTML = answer;
-        sin_flg = true;
-        document.getElementById('sin_str').innerHTML = 'sin';
-    }
+    sin_flg = trifonometric_fnc(sin_flg, 'sin', 'sin_str'); //change sin_flg and "div elements"
 };
+
+let btn_cos = document.getElementById('cos');
+btn_cos.onclick = function() {
+    cos_flg = trifonometric_fnc(cos_flg, 'cos', 'cos_str'); //change cos_flg and "div elements"
+}
+
+let btn_tan = document.getElementById('tan');
+btn_tan.onclick = function() {
+    tan_flg = trifonometric_fnc(tan_flg, 'tan', 'tan_str'); //change tan_flg and "div elements"
+}

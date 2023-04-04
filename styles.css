@@ -45,7 +45,7 @@ body {
 .item_fnc {
     display: inline-block;
     cursor: pointer;
-    width: 109px;
+    width: 80px;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ body {
 .symbol2 {
     font-size: large;
     color: rgb(24, 24, 24);
-    width: 109px;
+    width: 80px;
     height: 80px;
     background-color: rgb(100, 200, 100);
     display: flex;
